@@ -6,7 +6,7 @@ const rssFeeds = [
   ];
 
 module.exports = function (done) {
-  getRssData().then(results => done(null, results))
+  getRssData(rssFeeds[0]).then(results => done(null, results))
 };
 
 const getRssData = url => {
